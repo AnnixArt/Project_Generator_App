@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🛠️ Générateur de Projet Professionnel</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🛠️ Générateur de Projet Professionnel</h1>
+
+    <form id="projectForm">
+      <table class="form-table">
+        <tr>
+          <td><label for="projectName">📁 Nom du projet :</label></td>
+          <td><input type="text" name="projectName" id="projectName" placeholder="Nom du Projet" required /></td>
+        </tr>
+        <tr>
+          <td><label for="language">💻Choisir un langage :</label></td>
+          <td>
+            <select name="language" id="language" required>
+              <option value="html-css-js">🌐HTML/ 🎨CSS /🧩JavaScript</option>
+              <option value="python">🐍 Python</option>
+              <option value="csharp">⚙️ C#</option>
+              <option value="cpp">💻 C++</option>
+              <option value="php">🐘 PHP</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="database">🗄️ Base de données :</label></td>
+          <td>
+            <select name="database" id="database">
+              <option value="">Aucune</option>
+              <option value="mysql">MySQL</option>
+              <option value="sqlite">SQLite</option>
+              <option value="mongodb">MongoDB</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+
+      <div class="buttons">
+        <button type="button" id="previewBtn"> Prévisualiser le code</button>
+        <button type="button" id="downloadBtn">📦 Générer le projet-zip</button>
+        <button type="button" id="refreshBtn" class="danger">Réinitialiser</button>
+      </div>
+    </form><br><br>
+     
+     <p style="text-align: center;color: white;font-size: 15px"><i>© 2025 Anisse Artadji — Tous droits réservés.</i></p>
+      
+    <!-- Modal de prévisualisation -->
+    <div id="previewModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <pre id="previewText" class="preview-area"></pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
