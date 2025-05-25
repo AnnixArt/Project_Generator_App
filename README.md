@@ -45,8 +45,11 @@ Bienvenue sur le **Générateur de Projets Multilinguages**, une application web
 
 MonProjet/
 ├── index.html / main.py / main.cpp / index.php / main.cs
+|
 ├── style.css (si HTML/CSS/JS)
+|
 ├── script.js (si HTML/JS)
+|
 └── db_config.{js,py,cs,...} (si base de données sélectionnée)
 
 
